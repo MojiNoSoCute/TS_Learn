@@ -54,8 +54,14 @@
 
 //class & object
 
-import { classObject } from './topics/class_object';
+// import { classObject } from './topics/class_object';
 
-classObject()
+// classObject()
 
 //-------------------------------------------------------------
+
+//async promises
+
+import { asyncpromises } from './topics/async_promises';
+
+asyncpromises()
