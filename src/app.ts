@@ -1,67 +1,72 @@
-// ----------------การ import และ export module-------------------
+// -------- การ Import และ Export ของ Module ใน TypeScript --------
 
-// การ import ปกติ ผ่านชื่อ module
-// import { message as msg, messageTH , hello , welcome as wel } from "./topics/hello"
-// เปลี่ยนชื่อ ที่ import มาได้
+// การ import แบบปกติผ่านชืื่อ module ที่เราต้องการ
+// import { message as msg, messageTH, hello, welcome as wel } from './topics/hello'
 
-//import all (not default)
-// import * as hey from "./topics/hello"
-
-//import default
+// การ import แบบมี default ผ่านชื่อ module ที่เราต้องการ
 // import logMessage from './topics/logger'
-//การ import สามารถเปลี่ยนชื่อเป็นอะไรก็ได้
-// import log from "./topics/logger"
-// import แล้วเปลี่ยนชื่อโดยใช้ as
-// import { default as log } from "./topics/logger"
 
-//เรียนใช้งานตัวแปรและฟังก์ชันที่ import มา
+// การ import สามารถเปลี่ยนชื่อเป็นอะไรก็ได้
+// import logs from './topics/logger'
+// import { default as logs } from './topics/logger'
+
+// Import ทุกอย่างเป็น Object
+// import * as hey from './topics/hello'
+
+// เรียกใช้งานตัวแปรและฟังก์ชันที่ import มา
 // console.log(message)
 // console.log(messageTH)
 // hello()
 // welcome()
-
 // console.log(msg)
 // wel()
 
-//เรียกใช้งานฟังก์ชันdefault ที่ import มา
-// log("Hello, TypeScript!")
+// เรียกใช้งานฟังก์ชันที่ import มา
+// logMessage('Hello, world!')
 
-//use import all (not default)
+// logs('Hello, world!')
+
+// เรียกใช้งาน Object ที่ import มา
 // console.log(hey.message)
 // console.log(hey.messageTH)
 // hey.hello()
 // hey.welcome()
 
-//-------------------------------------------------------------
+// ---------------------------------
+// import { variabletype } from './topics/variable_type'
 
-// import variableType from "./topics/variable_type";
+// variabletype()
 
-// variableType()
+// ---------------------------------
 
-//-------------------------------------------------------------
-// import { interfaceandtype } from "./topics/interface_type";
+// import { interfaceandtype } from './topics/interface_and_type'
 
 // interfaceandtype()
 
-//-------------------------------------------------------------
+// ---------------------------------
 
-//function
-// import { functiontype } from './topics/function';
+// import { functiontype } from './topics/function'
 
 // functiontype()
 
-//-------------------------------------------------------------
+// ---------------------------------
 
-//class & object
-
-// import { classObject } from './topics/class_object';
+// import { classObject } from './topics/class_object'
 
 // classObject()
 
-//-------------------------------------------------------------
+// ---------------------------------
+// import { generic } from './topics/generic'
 
-//async promises
+// generic()
 
-import { asyncpromises } from './topics/async_promises';
+// ---------------------------------
+// import { asyncpromises } from "./topics/async_promises"
 
-asyncpromises()
+// asyncpromises()
+
+// ---------------------------------
+
+import { asyncawait } from "./topics/async_await"
+
+asyncawait()
